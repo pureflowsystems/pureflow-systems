@@ -83,8 +83,27 @@ header{
   display:flex; align-items:center;
 }
 .logo img{
-  height:38px; width:auto; display:block;
-  background:#fff; padding:6px 12px; border-radius:9px;
+  height:50px; width:auto; display:block;
+  background:#fff; padding:8px 14px; border-radius:10px;
+}
+.hero-logo-card{
+  background:#fff;
+  border-radius:20px;
+  padding:44px 36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  box-shadow:0 30px 70px -20px rgba(0,0,0,0.45);
+}
+.hero-logo-img{
+  width:100%;
+  max-width:360px;
+  height:auto;
+}
+@media (max-width:960px){
+  .hero-logo-card{padding:32px 24px;}
+  .hero-logo-img{max-width:280px;}
 }
 .logo .dot{
   width:9px;height:9px;border-radius:50%;
