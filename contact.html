@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | PureFlow Systems</title>
+<meta name="description" content="Book your free water test. Serving Mississauga and about an hour in every direction across the GTA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>PureFlow Systems</a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="navcta">
+      <a class="navphone" href="tel:4379333579">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.9 21 3 14.1 3 5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span class="label">(437) 933-3579</span>
+      </a>
+      <a class="btn btn-copper" href="contact.html" style="padding:11px 20px; font-size:14px;">Free Water Test</a>
+      <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="products.html" onclick="closeMobileNav()">Products</a>
+    <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
+    <a href="contact.html" class="active" onclick="closeMobileNav()">Contact</a>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="kicker">Get started</span>
+    <h1>Book your free water test.</h1>
+    <p>Tell us a bit about your home and we'll call to schedule — usually within a day.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div style="font-family:'IBM Plex Mono'; font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em; color:#5CC2BA;">Call or text</div>
+        <a href="tel:4379333579" class="contact-phone">(437) 933-3579</a>
+        <ul class="contact-list">
+          <li>📍 Mississauga &amp; the surrounding GTA — full list below</li>
+          <li>🕘 Mon–Sat, 8am–6pm</li>
+          <li>💧 Free water testing, always</li>
+          <li>🔧 Filter &amp; salt service available on request</li>
+          <li>✉️ <a href="mailto:pureflow.systemss@gmail.com" style="color:inherit; text-decoration:underline;">pureflow.systemss@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <form class="quote" id="quoteForm" onsubmit="submitQuoteForm(event)">
+        <div class="row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" type="text" placeholder="Jordan Smith" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel" placeholder="(555) 123-4567" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest">
+            <option>Free water test</option>
+            <option>Whole house softener + carbon</option>
+            <option>Whole house softener + 3-stage</option>
+            <option>Whole house carbon only</option>
+            <option>6-stage under-sink RO</option>
+            <option>7-stage under-sink RO</option>
+            <option>Filter or salt service for existing system</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="notes">Anything we should know?</label>
+          <textarea id="notes" placeholder="City water or well water, current issues, best time to call..."></textarea>
+        </div>
+        <button class="btn btn-copper" type="submit">Request My Free Water Test</button>
+        <p id="quoteFormNote" style="font-size:13px; color:var(--steel); margin-top:12px;">We'll open your email app with the details filled in — just hit send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section tight bg-mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Where we work</span>
+      <h2>Serving Mississauga and about an hour in every direction.</h2>
+      <p>Based in Mississauga, installing across the wider GTA. If your city isn't listed, call us anyway — chances are we still cover it.</p>
+    </div>
+    <div class="area-grid">
+      <div class="area-chip">Mississauga <span class="drivetime">home base</span></div>
+      <div class="area-chip">Toronto <span class="drivetime">~30 min</span></div>
+      <div class="area-chip">Brampton <span class="drivetime">~25 min</span></div>
+      <div class="area-chip">Oakville <span class="drivetime">~20 min</span></div>
+      <div class="area-chip">Milton <span class="drivetime">~30 min</span></div>
+      <div class="area-chip">Burlington <span class="drivetime">~35 min</span></div>
+      <div class="area-chip">Vaughan <span class="drivetime">~40 min</span></div>
+      <div class="area-chip">Markham <span class="drivetime">~50 min</span></div>
+      <div class="area-chip">Richmond Hill <span class="drivetime">~50 min</span></div>
+      <div class="area-chip">Halton Hills <span class="drivetime">~40 min</span></div>
+      <div class="area-chip">Caledon <span class="drivetime">~45 min</span></div>
+      <div class="area-chip">King City <span class="drivetime">~55 min</span></div>
+      <div class="area-chip">Newmarket <span class="drivetime">~55 min</span></div>
+      <div class="area-chip">Ajax <span class="drivetime">~55 min</span></div>
+      <div class="area-chip">Pickering <span class="drivetime">~50 min</span></div>
+      <div class="area-chip">Whitby <span class="drivetime">~60 min</span></div>
+      <div class="area-chip">Hamilton <span class="drivetime">~50 min</span></div>
+    </div>
+    <p class="area-note">Drive times are rough estimates and vary with traffic — if you're just outside this list, reach out and we'll let you know if we can make it work.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 PureFlow Systems. All rights reserved.</div>
+    <div>(437) 933-3579 · pureflow.systemss@gmail.com</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
