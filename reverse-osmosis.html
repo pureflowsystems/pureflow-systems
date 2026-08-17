@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ | PureFlow Systems</title>
-<meta name="description" content="Answers to common questions about water testing, softeners, filtration, reverse osmosis, pricing, and service.">
+<title>Reverse Osmosis Systems | PureFlow Systems</title>
+<meta name="description" content="6-stage and 7-stage under-sink reverse osmosis systems. See exactly what each stage removes with our interactive breakdown.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -330,6 +330,7 @@ header{
 
 /* ---------- Service / recurring ---------- */
 .service-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px;}
+.size-grid-2{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
 .service-card{
   background:#fff; border:1px solid var(--line-light); border-radius:var(--radius); padding:30px;
 }
@@ -428,6 +429,7 @@ form.quote .btn{margin-top:6px;}
   .pkg-grid{grid-template-columns:1fr;}
   .ro-grid{grid-template-columns:1fr;}
   .service-grid{grid-template-columns:1fr;}
+  .size-grid-2{grid-template-columns:1fr;}
   .about-grid{grid-template-columns:1fr; gap:30px;}
   .contact-grid{grid-template-columns:1fr;}
   form.quote .row{grid-template-columns:1fr;}
@@ -450,10 +452,19 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16
   100%{transform:translateX(0);}
 }
 
+
 .navlinks{gap:20px;}
 .navlinks a{font-size:13.8px;}
+.cross-links{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:16px;}
+.cross-link-card{
+  background:#fff; border:1px solid var(--line-light); border-radius:12px;
+  padding:22px 24px; transition:transform .15s ease, box-shadow .15s ease;
+}
+.cross-link-card:hover{transform:translateY(-3px); box-shadow:0 20px 40px -22px rgba(11,36,71,0.25);}
+.cross-link-card .label{font-family:'IBM Plex Mono'; font-size:11.5px; color:var(--copper); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:6px; display:block;}
+.cross-link-card h4{font-size:17px; margin-bottom:6px;}
+.cross-link-card p{font-size:13.5px; color:var(--steel);}
 </style>
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfqCAkFCxG5/K3dAAAHbklEQVRo3u1ZXWwbxxGe2b0jxbNIUZKtH0rWn5PYlS03sos0NZI82EXgxEgeHCQNHLRIgBZ5SIE+pG6CpkCNAEXR5qHNU4v2oS0aNEUSNC2KIkH+/6BIiiHHqiz5R5ZTW9aPI5EmJf7d3e704Y7H4/FIW+0DbYADQVgud3a+b3dmd2aJRAQ3s7BaA6gTqDWAOoFaA6gTqDWAOoFaA6gTqDWAOoFaA6gTqDWA/1cUz+cbvzxAxJKPNz7i6lLcASJCvAn4WCCdfVDKR9zIHDz+A5WCGAGdhvPn7vHMhaUq5fM4w8oMeRTRPQzBtoE+qlUJODoEZP23Gk4bvcGDrgGONbRGusaUzI8ABODqJIuBu4cKRitxUHx7C2gsG+Q3wHd8iVW0G1RATKU8yTNZ6eDrler3APmiL6Dx9HiNkvONyz2uX0o3Byohua6LrDK44mr5GfA6IfnQ9rdC3mG4MRdyzW+bR0QraolICMlYiTF0+YbTtpQtNUIAAnS8iggrrLF7KheIigejPwG048/2WkQ0DDOZSuu6GQ5rkbAmhQQsGiOXAxNSAQshgpC0nhN5k6wDpSnEAUDlWB7ybhq+67gBAgVYAEBCSlVRfvbr105Mzg4PDUzPLuz96rZnv39YStsl7POUgIAYZ6YpGGOcoWEKVeHvzyRfGlnd06flDFI5HtgZef14/CcPxhCAMUQGQhBDP9SI1pVERZZ0vQQ8bADg8sLKww/u+/YjBzLZ/H1Hnr99sO/g/j2mKTlnpikQERAMQ1xdTXe2NccTayvxVHdXm6rwL1PGYKzhB/d2GIJUjpfj+YWEAQCcsyspwxQUa1Z1QzKGHJHsExMAUDelwpHZm7zBHSjfOa4qiqIAgBYK7hyIjYxNv/nR5y889x1EfO4Xf9l/16433plYX8vcsfe22wa6/vn28f7e9rPnF39+9KFQUEXUAUAKCZwRAGegcHxpZGUxYRBAayPf1a19dGbt6P2d704l3zqV+uW3tk5fzv59IvHjB2JCSESfwHCk2kVmaUgr7qT8dHxmZGz62At/nY+nHrj/zpkzF61QXlpO6Hnj5NTcow/d893H7n3+V688dvjup564rzfW+sOf/qEp0jA2u/bnkfjvP06Mz2UaVBYJKeNzmXPL+tFDnT861LmUNM4t55aSRs6Qk/PZyfmsIeTo+fVYNOB26UpncEUCzsmjcAYA0c0t84nc6MkLfT3tr/726WhYI0TOOQCEtKCQFOto3bv7ltkvlnI5ffr0pRd/8w+Fs4MHhtMZfc9A5I6t0JBffP/E3OsTywjp370z2x42L6zkAGBnl5bJy6Fu7eXR1VCAHbmz5bXPEotXzW/uigCQLmQya0oCwA0eo4gYX9dX0+bY9MKVVDbYPzi8Y5i1tNw6EF3VuVACnCi+mmjcpI2OzxzaP2xm85lMbvu2WE+sdXiob9dgfzqrrxn08ieXUmlxanHT0C3tsdbG+avmyNnM43d1vfjWokTe0RxcSondXdqWsPLMK5e/d8/mu7c3PvnH//RvVqQwpubz7ZFAa6OKzvVeJvzYsWNu0MWtQUxmzaV4tjMaPLxvYPzDsa/1NB78+rbZS/ET8+nRi/m4oXx+duH45JwaUPbv27mSzNy++9ZoJNQS6/jbh6eDLW2fnFnRM9krV/W+9uij34h1NGvNmwIhlS0kxJF97R1RbSFuzq8ag92h6CY2s7C+tYV1NqtXUnpbBHfEApqK2zvDjQ2KOxSd68iBWszJnHqAiKygIQLGsJB/A0n7SkznzEsJ/exy9ouVjImKFDKfXuuPNWsNat6QSiCwp78pjDoHam4MWvMTkWULERBRSuIcdZOIKKhyADJMKSUxhpIgoDDn0vTk9hYBdz1QjQACWhHsbAwVNseZRQi5ltHT2XxrkwaIUsqgwhhHKYArPK8bhiG0UJCITCECiuIcJlICkVQULiUBQMnVLgvpoMvtsXClegj4B3ExiUVgbr+y8lMiIaSQZJqSMwxr6uTUrBCCAX386SlgLJHM/Ou9CQBIrWU+O3mOMZw6ffH4yfPIcOLfF/706ge6YaYz2Tc/OEFkLYe92PaSF0uQYgpU6SKoFMTkavm0C0UNSCJE7OnaAgCqqgx9pZczpjUEt/W2SymbwtrQjl4AaNvSFMmFAKC7s4UzVBUFAQZ6OogkIgOodNK7HahCXuzrQiUjfLKrkh4ERFbwPff+Wo7v6rEaiCilRCv7pCLKgt/amYMv3nIXunYq4cFalkQCAUlBLsxgO4LVI8miBwRWQ0qJiARE0vYTcGeEgB5K1eFt4GHLPppsG6W1b9klU+xxFhOBCBDsoHIanlvW47G+pfYGCLj1PdUglafCHlWXYiEciYonBLjL6BKdksqmvATdCIFy/SrFUSl6qjJDpZUqYKTyrypJtWcVz/Y57xRO6eR2E+f9w1pp14uId/0c9UqmfQvo/+VVws9nfDbHvWLks/BQxQRUVqwE5toEEK/pITeQ3ASPodWl/rxea7npf6GpE6i11AnUWuoEai11ArWWOoFaS51AraVOoNbyX9758Db1zR7LAAAAAElFTkSuQmCC">
 </head>
 <body>
 
@@ -464,8 +475,8 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16
       <a href="index.html">Home</a>
       <a href="softeners.html">Softeners</a>
       <a href="whole-home.html">Whole Home</a>
-      <a href="reverse-osmosis.html">RO Systems</a>
-      <a href="faq.html" class="active">FAQ</a>
+      <a href="reverse-osmosis.html" class="active">RO Systems</a>
+      <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="navcta">
@@ -481,67 +492,111 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16
     <a href="index.html" onclick="closeMobileNav()">Home</a>
     <a href="softeners.html" onclick="closeMobileNav()">Softeners</a>
     <a href="whole-home.html" onclick="closeMobileNav()">Whole Home</a>
-    <a href="reverse-osmosis.html" onclick="closeMobileNav()">RO Systems</a>
-    <a href="faq.html" class="active" onclick="closeMobileNav()">FAQ</a>
+    <a href="reverse-osmosis.html" class="active" onclick="closeMobileNav()">RO Systems</a>
+    <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
   </nav>
 </header>
 
 <div class="page-header">
   <div class="wrap">
-    <span class="kicker">Questions</span>
-    <h1>Frequently asked questions.</h1>
-    <p>The things people usually ask before they book a water test.</p>
+    <span class="kicker">Reverse osmosis</span>
+    <h1>Reverse Osmosis Systems</h1>
+    <p>A dedicated drinking-water system installed under the kitchen sink — 6-stage and 7-stage options, removing dissolved contaminants and sharpening taste right at the tap.</p>
   </div>
 </div>
 
-<section class="section">
+<section class="section" id="ro-options">
   <div class="wrap">
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Is the water test really free?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Yes — we come to your home, test your water on the spot, and walk you through the results. There's no cost and no obligation to buy anything afterward.</p></div>
+    <div class="section-head">
+      <span class="kicker">Under the sink</span>
+      <h2>Two options — the difference is one stage.</h2>
+      <p>The difference comes down to what the extra stage does, not just the number on the box. We'll walk you through which one actually fits your water when we're on site.</p>
+    </div>
+
+    <div class="ro-grid">
+      <div class="ro-card">
+        <div class="stagecount">6</div>
+        <h3>6-Stage RO System</h3>
+        <p>Sediment filter → carbon → 2nd carbon → RO membrane → post-carbon polish → remineralization or UV.</p>
+        <p>Removes dirt, chlorine, bad taste, and a large share of dissolved contaminants — salts, metals, and more — through the membrane stage.</p>
+        <div class="note">UV variant available — better suited to well water. We'll confirm on-site.</div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">How do I know if I need a softener, a filter, or both?<span class="plus">+</span></button>
-        <div class="faq-a"><p>That's exactly what the free water test tells us. Hardness, chlorine levels, sediment, and anything else in your supply all point to a different combination — we'll recommend based on what we actually find, not a one-size-fits-all package.</p></div>
+      <div class="ro-card alt">
+        <div class="stagecount">7</div>
+        <h3>7-Stage RO System</h3>
+        <p>Everything in the 6-stage system, plus an alkaline/remineralization stage — or a UV sterilizer, depending on your water.</p>
+        <p>The RO membrane still does the heavy lifting, reducing up to 95–99% of contaminants including lead, arsenic, nitrates and fluoride.</p>
+        <div class="note">A 7th stage isn't automatically "better" — it's better for a specific reason. Ask us which one applies to you.</div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Why don't you list prices on the website?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Cost depends on which filters your water actually needs and the labour involved, so a listed price would just be a guess. We'll give you a real number in person during your free water test, based on your home.</p></div>
+    </div>
+    <p style="font-size:13.5px; color:var(--steel); margin-top:20px; max-width:640px;">Every quote is put together in person, based on your actual water and setup. Book a free water test and we'll tell you which system fits and what it costs.</p>
+  </div>
+</section>
+
+<section class="section tight bg-mist" id="stages">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">How it works</span>
+      <h2>Follow the water through every stage.</h2>
+      <p>Tap a stage to see what it actually does. Toggle between the 6-stage and 7-stage system to see exactly where they differ.</p>
+    </div>
+
+    <div class="flow-wrap">
+      <div class="flow-toggle">
+        <button id="btn6" class="active" onclick="setStages(6)">6-Stage</button>
+        <button id="btn7" onclick="setStages(7)">7-Stage</button>
       </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">How often do filters actually need replacing?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Typically every 6–12 months, but it depends on your household's water quality and usage. Your annual water test is what tells us exactly which filters are due and what replacing them will cost.</p></div>
+
+      <div class="flow-track" id="flowTrack">
+        <div class="flow-line"></div>
+        <div class="flow-nodes" id="flowNodes">
+          <div class="fnode" data-stage="1" onclick="showDetail(1)"><div class="dot">1</div><div class="flabel">Sediment</div></div>
+          <div class="fnode" data-stage="2" onclick="showDetail(2)"><div class="dot">2</div><div class="flabel">Carbon #1</div></div>
+          <div class="fnode" data-stage="3" onclick="showDetail(3)"><div class="dot">3</div><div class="flabel">Carbon #2</div></div>
+          <div class="fnode" data-stage="4" onclick="showDetail(4)"><div class="dot">4</div><div class="flabel">RO Membrane</div></div>
+          <div class="fnode" data-stage="5" onclick="showDetail(5)"><div class="dot">5</div><div class="flabel">Post-Carbon</div></div>
+          <div class="fnode" data-stage="6" onclick="showDetail(6)"><div class="dot">6</div><div class="flabel">Remin / UV</div></div>
+          <div class="fnode" data-stage="7" onclick="showDetail(7)"><div class="dot">7</div><div class="flabel">Alkaline / UV</div></div>
+        </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">What's the difference between the 6-stage and 7-stage RO system?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Both use the same core sediment, carbon, and membrane stages. The 7-stage system adds one more step — usually alkaline remineralization or UV — which matters more for some water sources (like well water) than others. We'll tell you if it's worth it for your home.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Do I need a whole-house softener if I already have a water filter?<span class="plus">+</span></button>
-        <div class="faq-a"><p>A filter and a softener solve different problems — filtration targets chlorine, sediment, and chemicals, while a softener targets hardness (calcium and magnesium) that damages pipes and appliances. Many homes benefit from both, which is why we build our packages around the two together.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">How long does installation take?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Most whole-house softener and filtration installs take a few hours in a single visit. Under-sink RO systems are typically quicker. We'll give you a specific window when we schedule your install.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Do you service systems you didn't originally install?<span class="plus">+</span></button>
-        <div class="faq-a"><p>In most cases, yes — reach out with details on what you have and we'll let you know if we can help with filter replacements, salt top-offs, or repairs.</p></div>
+
+      <div class="flow-detail" id="flowDetail">
+        <b>Tap a stage above</b>&nbsp;— we'll explain what it removes and why it's in the lineup.
       </div>
     </div>
   </div>
 </section>
 
-<section class="section tight bg-mist">
+<section class="section" id="ro-service">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Ongoing service</span>
+      <h2>Filter replacements &amp; annual water testing.</h2>
+      <p>Every system needs upkeep — we handle it so you never have to think about it.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v6M12 21v-6M4.2 7.8l5.2 3M14.6 13.2l5.2 3M4.2 16.2l5.2-3M14.6 10.8l5.2-3" stroke="#3B82D6" stroke-width="1.6"/></svg></div>
+        <h4>Filter Replacements</h4>
+        <p>RO cartridges wear out on a schedule — we'll tell you exactly what's due and what it costs before we replace anything, no surprises.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12.5 11 15l4-5" stroke="#3B82D6" stroke-width="1.8"/><circle cx="12" cy="12" r="9" stroke="#3B82D6" stroke-width="1.6"/></svg></div>
+        <h4>Annual Water Test</h4>
+        <p>Your checkup happens every 6–12 months depending on your water and usage. It's how we know your membrane and filters are still performing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section tight"><div class="wrap"><div class="cross-links"><a href="softeners.html" class="cross-link-card"><span class="label">Also see</span><h4>Water Softeners</h4><p>Removes hardness at the main line — protects pipes, water heater, dishwasher, and washer.</p></a><a href="whole-home.html" class="cross-link-card"><span class="label">Also see</span><h4>Whole Home Filtration</h4><p>Treats every tap in the house — reduces chlorine, sediment, VOCs and odour.</p></a></div></div></section><section class="section tight bg-mist">
   <div class="wrap">
     <div class="cta-banner">
       <div>
-        <h2>Still have a question?</h2>
-        <p>Give us a call, or book a free water test and ask us in person.</p>
+        <h2>Not sure what your water actually needs?</h2>
+        <p>We'll come to you, test your water on the spot, and show you the results — free, no obligation to buy anything.</p>
       </div>
-      <a href="contact.html" class="btn btn-dark" style="background:#0B2447;">Get In Touch</a>
+      <a href="contact.html" class="btn btn-dark" style="background:#0B2447;">Book Your Free Test</a>
     </div>
   </div>
 </section>
