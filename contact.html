@@ -536,7 +536,7 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16
           <textarea id="notes" placeholder="City water or well water, current issues, best time to call..."></textarea>
         </div>
         <button class="btn btn-copper" type="submit">Request My Free Water Test</button>
-        <p id="quoteFormNote" style="font-size:13px; color:var(--steel); margin-top:12px;">We'll open your email app with the details filled in — just hit send.</p>
+        <p id="quoteFormNote" style="font-size:13px; color:var(--steel); margin-top:12px;">We'll open Gmail in a new tab with the details filled in — just hit send.</p>
       </form>
     </div>
   </div>
@@ -642,15 +642,17 @@ function submitQuoteForm(e){
     "Interested in: " + interest + "\n" +
     "Notes: " + (notes || "—");
 
-  const mailtoUrl = "mailto:" + LEAD_EMAIL +
-    "?subject=" + encodeURIComponent(subject) +
+  // Opens Gmail's web compose window directly, pre-filled — works on any device
+  // without depending on a desktop mail app (e.g. Outlook) being installed or configured.
+  const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(LEAD_EMAIL) +
+    "&su=" + encodeURIComponent(subject) +
     "&body=" + encodeURIComponent(body);
 
-  window.location.href = mailtoUrl;
+  window.open(gmailUrl, '_blank');
 
   const note = document.getElementById('quoteFormNote');
   if(note){
-    note.textContent = "Opening your email app with the details filled in — just hit send and we'll be in touch shortly.";
+    note.textContent = "Opening Gmail in a new tab with the details filled in — just hit send and we'll be in touch shortly.";
   }
 }
 

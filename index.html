@@ -234,6 +234,9 @@ header{
 .overview-card h3{font-size:24px; margin-bottom:12px;}
 .overview-card p{color:var(--steel); font-size:15px; margin-bottom:24px; flex:1;}
 @media (max-width:760px){.overview-grid{grid-template-columns:1fr;}}
+.overview-grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
+@media (max-width:900px){.overview-grid.cols-3{grid-template-columns:1fr;}}
+
 
 /* ---------- Package cards ---------- */
 .pkg-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;}
@@ -537,7 +540,7 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:16
       <h2>Three ways to fix your water, one place to start.</h2>
       <p>Whichever fits your home, every job starts the same way — a free water test so we know exactly what we're solving for.</p>
     </div>
-    <div class="overview-grid" style="grid-template-columns:1fr 1fr 1fr;">
+    <div class="overview-grid cols-3">
       <div class="overview-card">
         <div class="tier">Point of entry</div>
         <h3>Water Softeners</h3>
